@@ -21,8 +21,8 @@ export default function Home() {
           fontSize: '1.5rem',
         }}
       >
+        <h1>Root app</h1>
         <Link href="/subapp">subapp [{NEXT_PUBLIC_URL}]</Link>
-        <Link href="/portal">portal [{NEXT_PUBLIC_URL}]</Link>
       </div>
     </main>
   );
