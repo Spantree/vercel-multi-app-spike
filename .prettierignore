@@ -1,0 +1,15 @@
+**/dist/**/*
+**/build/**/*
+**/node_modules/**/*
+**/*.config.js
+**/*.md
+**/*.yaml
+**/*.html
+**/webpack.helpers.js
+**/.eslintrc
+**/*.json
+.github/**/*
+docs/**/*
+infrastructure/**/*
+packages/api/src/generated
+**/.storybook/**/*
