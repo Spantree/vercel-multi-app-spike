@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
 export default function Home() {
-  const NEXT_PUBLIC_URL = process.env.NEXT_PUBLIC_URL;
+  const NEXT_PUBLIC_SUBAPP_URL = process.env.NEXT_PUBLIC_SUBAPP_URL;
   // const NEXT_PUBLIC_LAUNCH_PREFIX = 'foo';
-  console.log(`Home ${NEXT_PUBLIC_URL}`, process.env);
+  console.log(`Home ${NEXT_PUBLIC_SUBAPP_URL}`, process.env);
   return (
     <main
       style={{
@@ -22,7 +22,7 @@ export default function Home() {
         }}
       >
         <h1>Root app</h1>
-        <Link href="/subapp">subapp [{NEXT_PUBLIC_URL}]</Link>
+        <Link href="/subapp">subapp [{NEXT_PUBLIC_SUBAPP_URL}]</Link>
       </div>
     </main>
   );
