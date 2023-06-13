@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {"source": "/subapp/", "destination": "https://vmas-subapp.vercel.app/"},
+    {"source": "/subapp/:match*", "destination": "https://vmas-subapp.vercel.app/:match*"},
+    {"source": "/", "destination": "https://vmas-root.vercel.app/"},
+    {"source": "/:match*", "destination": "https://vmas-root.vercel.app/:match*"}
+  ]
+}

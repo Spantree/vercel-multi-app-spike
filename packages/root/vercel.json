@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {"source": "/subapp/", "destination": "https://vercel-multi-app-spike-subapp.vercel.app/"},
-    {"source": "/subapp/:match*", "destination": "https://vercel-multi-app-spike-subapp.vercel.app/:match*"},
-    {"source": "/", "destination": "https://vercel-multi-app-spike-root.vercel.app/"},
-    {"source": "/:match*", "destination": "https://vercel-multi-app-spike-root.vercel.app/:match*"}
-  ]
-}
