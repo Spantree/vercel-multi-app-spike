@@ -2,12 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   async rewrites() {
-    // const publicURL = process.env.NEXT_PUBLIC_SUBAPP_URL
-    //   ? `${process.env.NEXT_PUBLIC_SUBAPP_URL}/:match*`
-    //   : 'http://127.0.0.1:3001/subapp/:match*';
+    const publicURL = process.env.NEXT_PUBLIC_SUBAPP_URL
+      ? `${process.env.NEXT_PUBLIC_SUBAPP_URL}/:match*`
+      : 'http://127.0.0.1:3001/subapp/:match*';
 
-    // console.log('Rewrites', process.env);
-    const rules = [{ source: '/subapp/:match*', destination: 'https://vmas-subapp.vercel.app/:match*' }];
+    const rules = [{ source: '/subapp/:match*', destination: publicURL }];
     console.log("Rewrites", rules);
     return rules;
   },
