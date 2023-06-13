@@ -22,7 +22,14 @@ export default function Home() {
         }}
       >
         <h1>Root app</h1>
+        <br />
         <Link href="/subapp">subapp [{NEXT_PUBLIC_SUBAPP_URL}]</Link>
+        <div
+          style={{ border: '1px solid cyan', padding: '1rem', fontSize: '12px', minWidth: '200px' }}
+        >
+          <pre>GIT SHA: {process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA}</pre>
+          <pre>GIT AUTHOR: {process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_AUTHOR_LOGIN}</pre>
+        </div>
       </div>
     </main>
   );
