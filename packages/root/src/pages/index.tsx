@@ -14,20 +14,20 @@ export default function Home() {
         justifyContent: 'center',
         flexDirection: 'column',
         textAlign: 'center',
+        backgroundColor: '#282c34',
+        color: 'white',
       }}
     >
       <div
         style={{
           display: 'flex',
-          gap: '2rem',
           fontSize: '1.5rem',
         }}
       >
-        <p>This is the root app.</p>
-        <br />
+        <Image src="/root.png" width="350" height="350" alt="root" />
       </div>
       <div>
-        <Image src="/cat-cat-dance.gif" width="250" height="250" alt="cat dance" />
+        <p>This is the root app.</p>
       </div>
       <div>
         <br />
@@ -44,6 +44,12 @@ export default function Home() {
         >
           <pre>GIT SHA: {process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA}</pre>
           <pre>GIT AUTHOR: {process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_AUTHOR_LOGIN}</pre>
+        </div>
+        <div style={{ marginTop: '20px', fontSize: '10px' }}>
+          <a href="https://www.freepik.com/free-vector/hand-drawing-illustration-development-concept_3110577.htm#query=roots%20drawing&position=1&from_view=keyword&track=ais">
+            Image by rawpixel.com
+          </a>{' '}
+          on Freepik
         </div>
       </div>
     </div>
