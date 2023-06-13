@@ -7,7 +7,7 @@ const nextConfig = {
     //   : 'http://127.0.0.1:3001/subapp/:match*';
 
     // console.log('Rewrites', process.env);
-    const rules = [{ source: '/subapp/:match*', destination: 'http://127.0.0.1:3001/subapp/:match*' }];
+    const rules = [{ source: '/subapp/:match*', destination: 'https://vmas-root.vercel.app/:match*' }];
     console.log("Rewrites", rules);
     return rules;
   },
