@@ -27,11 +27,13 @@ export default function Home() {
         <Image src="/root.png" width="350" height="350" alt="root" />
       </div>
       <div>
-        <p>This is the root app.</p>
+        <p style={{ color: '#eee' }}>This is the root app.</p>
       </div>
       <div>
         <br />
-        <Link href="/subapp">subapp [{NEXT_PUBLIC_SUBAPP_URL}]</Link>
+        <Link style={{ color: '#fff' }} href="/subapp">
+          subapp [{NEXT_PUBLIC_SUBAPP_URL}]
+        </Link>
         <br />
         <div
           style={{
