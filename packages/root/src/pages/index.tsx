@@ -4,6 +4,7 @@ import Link from 'next/link';
 export default function Home() {
   const NEXT_PUBLIC_SUBAPP_URL = process.env.NEXT_PUBLIC_SUBAPP_URL;
   console.log(`Home ${NEXT_PUBLIC_SUBAPP_URL}`, process.env);
+  console.log(process.env);
 
   return (
     <div
@@ -28,6 +29,7 @@ export default function Home() {
       </div>
       <div>
         <p style={{ color: '#eee' }}>This is the root app.</p>
+        <p>Deployment 001</p>
       </div>
       <div>
         <br />
